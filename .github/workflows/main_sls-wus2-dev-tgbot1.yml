@@ -35,6 +35,7 @@ jobs:
         run:
           cd Volodymyr_Stohnii
           pip install -r requirements.txt
+
         
       # Optional: Add step to run tests here
 
