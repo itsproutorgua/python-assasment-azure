@@ -1,0 +1,19 @@
+service: tgbot1
+
+provider:
+  name: azure
+  runtime: python3.8
+  region: westus2
+
+plugins:
+  - serverless-azure-functions
+
+functions:
+  hello:
+    handler: src/handlers/myenv/main.py
+    events:
+      - http: true
+        methods:
+          - POST
+          - GET
+        authLevel: anonymous
